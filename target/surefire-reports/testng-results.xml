@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestAll" duration-ms="29650" started-at="2019-11-01T18:52:44Z" finished-at="2019-11-01T18:53:14Z">
+    <groups>
+    </groups>
+    <test name="order" duration-ms="29650" started-at="2019-11-01T18:52:44Z" finished-at="2019-11-01T18:53:14Z">
+      <class name="CRMProPageTests.CRMLoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="setup" is-config="true" duration-ms="157" started-at="2019-11-01T18:52:44Z" finished-at="2019-11-01T18:52:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="initialization" is-config="true" duration-ms="10630" started-at="2019-11-01T18:52:44Z" finished-at="2019-11-01T18:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="setUp" is-config="true" duration-ms="105" started-at="2019-11-01T18:52:55Z" finished-at="2019-11-01T18:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="verifyLoginPageTitle" duration-ms="133" started-at="2019-11-01T18:52:56Z" description="Title" finished-at="2019-11-01T18:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="tearDown" is-config="true" duration-ms="826" started-at="2019-11-01T18:52:56Z" finished-at="2019-11-01T18:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="initialization" is-config="true" duration-ms="5799" started-at="2019-11-01T18:52:57Z" finished-at="2019-11-01T18:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="setUp" is-config="true" duration-ms="2" started-at="2019-11-01T18:53:02Z" finished-at="2019-11-01T18:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="crmLogoImageTest()[pri:2, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="crmLogoImageTest" duration-ms="297" started-at="2019-11-01T18:53:02Z" finished-at="2019-11-01T18:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crmLogoImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="tearDown" is-config="true" duration-ms="808" started-at="2019-11-01T18:53:03Z" finished-at="2019-11-01T18:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="initialization" is-config="true" duration-ms="4834" started-at="2019-11-01T18:53:03Z" finished-at="2019-11-01T18:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="setUp" is-config="true" duration-ms="1" started-at="2019-11-01T18:53:08Z" finished-at="2019-11-01T18:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login()[pri:3, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="login" duration-ms="4288" started-at="2019-11-01T18:53:08Z" finished-at="2019-11-01T18:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="tearDown" is-config="true" duration-ms="1201" started-at="2019-11-01T18:53:13Z" finished-at="2019-11-01T18:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="lodend()[pri:0, instance:CRMProPageTests.CRMLoginPageTest@94f09b]" name="lodend" is-config="true" duration-ms="0" started-at="2019-11-01T18:53:14Z" finished-at="2019-11-01T18:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lodend -->
+      </class> <!-- CRMProPageTests.CRMLoginPageTest -->
+    </test> <!-- order -->
+  </suite> <!-- TestAll -->
+</testng-results>

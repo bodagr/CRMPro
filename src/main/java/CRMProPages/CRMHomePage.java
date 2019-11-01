@@ -1,6 +1,7 @@
 package CRMProPages;
 
 import CRMProBase.CRMProPageBase;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -24,21 +25,20 @@ public class CRMHomePage extends CRMProPageBase {
     @FindBy(xpath="//a[@title='New Contact']")
     WebElement newContactLink;
 
-    final WebDriver driver;
-
     public CRMHomePage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     public String verifyHomePageTitle() {
         return driver.getTitle();
     }
 
+    @Step("Verifying user name...")
     public boolean verifyCorrectUserName() {
         return userNameLabell.isDisplayed();
     }
 
+    @Step("Clicked on Contact")
     public CRMContactPage clickContactLink() {
         contactLink.click();
         return new CRMContactPage(driver);
@@ -54,9 +54,11 @@ public class CRMHomePage extends CRMProPageBase {
         return new CRMTastPage(driver);
     }
 
-    public void clickOnNewContactLink() {
+    @Step("Clicked on new Contact")
+    public CRMContactPage clickOnNewContactLink() {
         Actions action = new Actions(driver);
         action.moveToElement(contactLink).build().perform();
         newContactLink.click();
+        return new CRMContactPage(driver);
     }
 }

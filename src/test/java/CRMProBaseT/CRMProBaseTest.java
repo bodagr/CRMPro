@@ -7,34 +7,41 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
-public class CRMProBaseTest extends CRMProPageBase {
+public class CRMProBaseTest {
 
-    protected static CRMProPageBase base;
-    protected static WebDriver driver;
+    private WebDriver driver;
     public Logger logger;
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 
     @BeforeClass
     public void setup() {
         logger = Logger.getLogger("CRMPro");
         PropertyConfigurator.configure(".\\src\\main\\resources\\log4j.properties");
         logger.setLevel(Level.DEBUG);
+        logger.info("=============> Started TC <=============");
     }
 
-    @BeforeTest
-    public static void initialization() {
+    @BeforeMethod
+    public void initialization() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-
-        driver.get(prop.getProperty("CRMurl"));
+        driver.get("https://www.crmpro.com/");
     }
 
-    @AfterTest
-    public static void tearDown() {
-        driver.close();
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
     }
+
+    @AfterClass
+    public void lodend() {
+        logger.info("********** Test case FINISHED **********");
+    }
+
 
 }

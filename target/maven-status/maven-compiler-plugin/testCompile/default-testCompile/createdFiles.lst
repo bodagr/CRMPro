@@ -1,0 +1,5 @@
+CRMProBaseT\CRMProBaseTest.class
+CRMProPageTests\CRMContactPageTest.class
+Utils\XLUtils.class
+CRMProPageTests\CRMHomePageTest.class
+CRMProPageTests\CRMLoginPageTest.class

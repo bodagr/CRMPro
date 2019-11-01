@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Test" parallel="false" preserve-order="true" verbose="2">
+
+    <test name="Login TC">
+        <classes>
+            <class name="CRMProPageTests.CRMLoginPageTest" />
+        </classes>
+    </test>
+    <test name="Home TC">
+        <classes>
+            <class name="CRMProPageTests.CRMHomePageTest" />
+        </classes>
+    </test>
+    <test name="Contact TC">
+        <classes>
+            <class name="CRMProPageTests.CRMContactPageTest" />
+        </classes>
+    </test>
+
+</suite>
