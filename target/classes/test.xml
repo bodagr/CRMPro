@@ -2,20 +2,24 @@
 
 <suite name="Smoke Test" parallel="false" preserve-order="true" verbose="2">
 
+    <listeners>
+        <listener class-name="Listeners.AllureTestListener" />
+    </listeners>
+
     <test name="Login TC">
         <classes>
             <class name="CRMProPageTests.CRMLoginPageTest" />
         </classes>
     </test>
-    <test name="Home TC">
-        <classes>
-            <class name="CRMProPageTests.CRMHomePageTest" />
-        </classes>
-    </test>
-    <test name="Contact TC">
-        <classes>
-            <class name="CRMProPageTests.CRMContactPageTest" />
-        </classes>
-    </test>
+    <!--<test name="Home TC">-->
+        <!--<classes>-->
+            <!--<class name="CRMProPageTests.CRMHomePageTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Contact TC">-->
+        <!--<classes>-->
+            <!--<class name="CRMProPageTests.CRMContactPageTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
 
 </suite>

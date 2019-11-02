@@ -8,10 +8,12 @@ import Utils.XLUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+@Listeners
 public class CRMContactPageTest extends CRMProBaseTest {
 
     CRMLoginPage loginPage;
@@ -36,7 +38,7 @@ public class CRMContactPageTest extends CRMProBaseTest {
         Assert.assertTrue(homePage.clickContactLink().checkIfNewContactWasCreated("Dr.", "Day", "Feld", "Arr", "120", "000", "777", "ew@ex.com"));
     }
 
-    @Test (priority = 2, dataProvider = "contactList", description = "Add user: {1} {2}")
+    @Test (priority = 2, dataProvider = "contactList", description = "Add user: ")
     public void createNewContact(String title, String ftName, String ltName, String comp, String ph, String hp, String mp, String em) {
         homePage.clickOnNewContactLink()
             .createNewContact(title, ftName, ltName, comp, ph, hp, mp, em);
@@ -48,6 +50,7 @@ public class CRMContactPageTest extends CRMProBaseTest {
         String path = "C:\\Users\\Admin\\IdeaProjects\\CRMPro\\src\\main\\resources\\contactsListN.xlsx";
         int rownum = xlUtils.getRowCount(path, "Sheet1");
         int colnum = xlUtils.getCellCount(path, "Sheet1", 1);
+        System.out.println("rownum: " + rownum + "cellnum: " + colnum);
 
         String [][] contactData = new String[rownum][colnum];
         for (int i = 1; i < rownum; i++) {

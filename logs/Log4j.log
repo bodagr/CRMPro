@@ -327,3 +327,13 @@
 2019-11-01 14:39:51 INFO CRMPro:43 - ********** Test case FINISHED **********
 2019-11-01 14:39:51 INFO CRMPro:26 - =============> Started TC <=============
 2019-11-01 14:45:44 INFO CRMPro:43 - ********** Test case FINISHED **********
+2019-11-01 17:49:37 INFO CRMPro:26 - =============> Started TC <=============
+2019-11-01 17:49:54 INFO CRMPro:25 - --->> Verified Login Page Title
+2019-11-01 17:50:00 INFO CRMPro:32 - --->> Verified CRM logo img
+2019-11-01 17:50:07 INFO CRMPro:39 - --->> Verified login
+2019-11-01 17:50:13 INFO CRMPro:43 - ********** Test case FINISHED **********
+2019-11-01 17:57:44 INFO CRMPro:26 - =============> Started TC <=============
+2019-11-01 17:57:54 INFO CRMPro:25 - --->> Verified Login Page Title
+2019-11-01 17:58:00 INFO CRMPro:32 - --->> Verified CRM logo img
+2019-11-01 17:58:08 INFO CRMPro:39 - --->> Verified login
+2019-11-01 17:58:13 INFO CRMPro:43 - ********** Test case FINISHED **********

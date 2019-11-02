@@ -6,8 +6,10 @@ import CRMProPages.CRMHomePage;
 import CRMProPages.CRMLoginPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners
 public class CRMHomePageTest extends CRMProBaseTest {
 
     CRMHomePage homePage;

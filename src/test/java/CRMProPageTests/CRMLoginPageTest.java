@@ -5,8 +5,10 @@ import CRMProPages.CRMLoginPage;
 import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners()
 public class CRMLoginPageTest extends CRMProBaseTest {
 
     CRMLoginPage loginPage;
@@ -19,7 +21,7 @@ public class CRMLoginPageTest extends CRMProBaseTest {
     @Test (priority = 1, description = "Verify Login page title")
     @Description("Title")
     public void verifyLoginPageTitle() {
-        String expectedTitle = "CRMPRO - CRM software for customer relationship management, sales, and support.";
+        String expectedTitle = "CRMPRO - CRM software for customer relationship management, sales, and support";
         logger.info("--->> Verified Login Page Title");
         Assert.assertEquals(loginPage.getPageTitle(), expectedTitle);
     }
